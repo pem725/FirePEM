@@ -1,5 +1,10 @@
 ## try out code here
 
+library(usethis)
+## usethis::use_github()  ### run once then comment out - sets the local git repot to Github
+
+
+
 ## assumptions
 # 1. Start with a fixed amount
 # 2. Contribute to the fixed amount with reinvestments

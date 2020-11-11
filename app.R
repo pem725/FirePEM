@@ -75,7 +75,7 @@ server <- function(input, output) {
         tmp <- rbind(tmp1,tmp2)
         tmp$type <- as.factor(tmp$type)
 
-        ggplot(tmp,aes(x=t,y=FV, by=type)) +
+        ggplot(tmp,aes(x=t,y=FV, by=type, color= type)) +
             geom_smooth(size=2) +
             geom_hline(yintercept = input$DesTot, color='red', size=2) + scale_y_continuous(labels = scales::comma)
 
